@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap simple form</title>
+  <style>
+    #p1{
+      color: white;
+      background-color: orangered;
+      text-align: center;
+    }
+    .p1{
+      color: orangered;
+    }
+    p {
+      text-align: center;
+    }
+    #p2{
+      color: blue;
+      background-color: #aecbcb;
+    }
+    #form2 input{
+      text-align: -moz-center;
+    }
+  </style>
+</head>
+<body>
+<!--phần 1 -->
+<form action="baitap1simpleform.html">
+  <h2 id="p1">SỞ THÍCH CỦA BẠN</h2>
+  <label>Họ và tên </label><input name="yourname" type="text" size="80%"><br>
+  <label>Email </label><input name="email" type="text" size="60%"><br>
+  <label>Sở thích</label>
+  <input id="i1" type="checkbox" name="sport"><span class="p1"> Thể thao</span>
+  <input id="i2" type="checkbox" name="music"><span class="p1"> Âm nhạc</span>
+  <input id="i3" type="checkbox" name="reading"><span class="p1"> Đọc sách</span>
+  <input id="i4" type="checkbox" name="web"><span class="p1"> Lướt web</span>
+  <input id="i5" type="checkbox" name="play game"><span class="p1"> Chơi game</span>
+  <input id="i6" type="checkbox" name="film"><span class="p1"> Điện ảnh</span>
+  <input id="i7" type="checkbox" name="travel"><span class="p1"> Du lịch</span>
+  <p>
+    <input type="submit" value="Gửi thông tin" name="Submit Form">
+    <input type="submit" value="Nhập lại" name="Reset Form">
+  </p>
+</form>
+<!--phần 2-->
+<form action="baitap1simpleform.html" id="form2">
+  <h2 id="p2">ĐĂNG KÝ HỌC VIÊN</h2>
+  <label>Full name </label><input name="yourname" type="text"><br>
+  <label>Birt day </label><input name="birtday" type="date"><br>
+  <label>SEX </label>
+  <input id="+" type="radio" name="male"><span> Male</span>
+  <input id="-" type="radio" name="female"><span> Female</span><br>
+  <label>Address </label><input name="Address" type="text" height="200%"><br>
+  <label>Class </label><select name="class">
+  <option>Chọn Lớp</option>
+</select><br>
+  <label>Email </label><input name="email" type="email"><br>
+  <label>Phone number </label><input name="phonenumber" type="tel"><br>
+  <div>
+    <input type="submit" value="Đăng ký" name="Submit Form">
+    <input type="submit" value="Nhập lại" name="Reset Form">
+  </div>
+</form>
+
+</body>
+</html>
